@@ -1,6 +1,6 @@
 # Custom-Data-pipline-in-Tensorflow-for-images
 Writing the efficient data loader in tensorflow with making use of [tensorflows data loader API](https://www.tensorflow.org/api_docs/python/tf/data/Dataset) and [tensorflow datasets](https://www.tensorflow.org/datasets) and generalizing it for loading supervised and unsupervised image data.
-The file named [Data_pipline.py](Data_pipline.py) consists the class Data_pipeline which can be imported in the other files
+The file named [Data_pipline.py](Data_pipline.py) consists the class Data_pipeline which can be imported in the other files. The class can be changed according to the users need. The data loader makes use of GPU and other optimizations like prefetch and parallel calls.
 
 # Parameters Description
 The class Data_Pipeline has many parameters
@@ -22,5 +22,12 @@ The class Data_Pipeline has many parameters
                                 dataset object will have the (image,image,label).
 * save_data : If True then dataset are saved according to [tensorflow dataset save](https://www.tensorflow.org/api_docs/python/tf/data/experimental/save) in the save_path.
 * save_path : Path to save the dataset.
+# Libraries required
+* tensorflow = 2.3.1 or higher
+* tensorflow_datasets
+* numpy
+* os
+* time
+* matplotlib
 
   
