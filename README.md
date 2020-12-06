@@ -1,4 +1,4 @@
-# Custom-Data-pipline-in-Tensorflow-for-images
+# Custom-Image-Dataset-loader-in-Tensorflow
 Writing the efficient data loader in tensorflow with making use of [tensorflows data loader API](https://www.tensorflow.org/api_docs/python/tf/data/Dataset) and [tensorflow datasets](https://www.tensorflow.org/datasets) and generalizing it for loading supervised and unsupervised image data.
 The file named [Data_pipline.py](Data_pipline.py) consists the class Data_pipeline which can be imported in the other files. The class can be changed according to the users need. The data loader makes use of GPU and other optimizations like prefetch and parallel calls.
 
